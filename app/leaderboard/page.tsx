@@ -5,9 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { CONTESTS, Contest } from "@/lib/contestData";
 
-// ─────────────────────────────────────────────
-// Types
-// ─────────────────────────────────────────────
+
 interface ChallengeScore {
   challengeId: string;
   title: string;
@@ -35,9 +33,7 @@ interface Participant {
   trendAmount: number;
 }
 
-// ─────────────────────────────────────────────
-// Mock leaderboard generator
-// ─────────────────────────────────────────────
+
 function generateLeaderboard(contest: Contest): Participant[] {
   const names = [
     { name: "Yuki Sato",       handle: "yukis",    color: "#c8f135", country: "🇯🇵" },
