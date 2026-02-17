@@ -324,14 +324,12 @@ function ScoringResults({ result, hasNext, onNext }: { result: ScoreResult; hasN
     );
 }
 
-// ─────────────────────────────────────────────
-// Main Page
-// ─────────────────────────────────────────────
+
 export default function ChallengePage() {
     const params = useParams();
     const router = useRouter();
-    const contestId = params.contestId as string;
-    const challengeId = params.challengeId as string;
+    const contestId = params.contestid as string;
+    const challengeId = params.challengeid as string;
 
     const contest = CONTESTS.find(c => c.id === contestId);
     const challengeIndex = contest ? contest.challenges.findIndex(ch => ch.id === challengeId) : -1;
