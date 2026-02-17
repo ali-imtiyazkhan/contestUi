@@ -1,4 +1,4 @@
 {
-  "/page": "app/page.js",
-  "/leaderboard/page": "app/leaderboard/page.js"
+  "/leaderboard/page": "app/leaderboard/page.js",
+  "/contests/[contestid]/challenge/[challengeid]/page": "app/contests/[contestid]/challenge/[challengeid]/page.js"
 }
